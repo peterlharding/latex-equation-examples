@@ -3,6 +3,7 @@
 *.pdf
 *.aux
 *.bib
+*.log
 
 # Archives
 *.7z

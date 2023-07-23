@@ -20,7 +20,246 @@
 
 \section{Equation Examples}
 
+\huge{
+	\[ E = mc^2  \]
+}
 
+\[ f^{\prime}_{ij} \]
+
+\[ f^{\prime \prime 2} \]
+
+\[ {}^{\dagger} \]
+
+\[ F(x_{1}, x_{2}, \dots, x_{n})  \]
+
+\[ \int\limits_{-\infty}^{\infty} e^{-x^{2}} \, dx = \sqrt{\pi} \]
+
+
+Tensor notation:
+
+\[ \Gamma^{k}_{ij} \]
+
+
+Arithmetic equations are typed with a dollar sign. For example, $a + b$, $a - b$, $-a$, $a / b$, $a b$. There are different forms for multiplication and division that are $a \cdot b$, $a \times b$, $a \div b$
+
+
+\begin{equation} \label{eqn}
+	\huge{E = {mc^2}}
+\end{equation}
+
+The equation \ref{eqn} states mass equivalence relationship.
+
+\newpage
+
+
+
+\begin{multline*}
+	p(x) = x^8+x^7+x^6+x^5 \\
+	- x^4 - x^3 - x^2 - x
+\end{multline*}
+
+
+\begin{align*}
+	a+b        &     a-b              &  (a+b)(a-b)\\
+	x+y         &  x-y   &  (x+y)(x-y)\\
+	p+q   &  p-q          &  (p+q)(p-q)
+\end{align*}
+
+
+\section{Grouping and Centering Equations}
+
+\begin{gather*}
+	(a+b)=a^2+b^2+2ab \\
+	(a-b)=a^2+b^2-2ab
+\end{gather*}
+
+
+\section{Parentheses and Brackets}
+
+\[
+\left \{
+\begin{tabular}{ccc}
+	1 & 5 & 8 \\
+	0 & 2 & 4 \\
+	3 & 3 & -8
+\end{tabular}
+\right \}
+\]
+
+\newpage
+
+
+\[ \big( \Big( \bigg( \Bigg( \]
+\[ \big] \Big] \bigg] \Bigg] \]
+\[ \big\{ \Big\{ \bigg\{ \Bigg\{\ \]
+\[ \big \langle \Big \langle \bigg \langle  \Bigg \langle \]
+\[ \big \rangle \Big \rangle \bigg \rangle  \Bigg \rangle \]
+
+
+\section{Operators}
+
+\[
+\sin^2(a)+\cos^2(a) = 1
+\]
+
+\[
+\lim_{h \rightarrow 0 } \frac{f(x+h)-f(x)}{h}
+\]
+
+This operator changes when used alongside
+
+text \( \lim_{x \rightarrow h} (x-h) \).
+
+
+\section{Fractions and Binomials}
+
+\[
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+\]
+
+\[ f(x)=\frac{P(x)}{Q(x)} \ \ \textrm{and}
+\ \ f(x)=\textstyle\frac{P(x)}{Q(x)} \]
+\[ \frac{1+\frac{a}{b}}{1+\frac{1}{1+\frac{1}{a}}} \]
+
+
+\section{Left alignment of multiline equations in LaTeX}
+
+\begin{flalign}
+	f(u) & =\sum_{j=1}^{n} x_jf(u_j)&\\
+	& =\sum_{j=1}^{n} x_j \sum_{i=1}^{m} a_{ij}v_i&\\
+	& =\sum_{j=1}^{n} \sum_{i=1}^{m} a_{ij}x_jv_i
+\end{flalign}
+
+% Remove numbering in multiline equations 1
+
+\begin{flalign*}
+	f(u) & =\sum_{j=1}^{n} x_jf(u_j)&\\
+	& =\sum_{j=1}^{n} x_j \sum_{i=1}^{m} a_{ij}v_i&\\
+	& =\sum_{j=1}^{n} \sum_{i=1}^{m} a_{ij}x_jv_i
+\end{flalign*}
+
+% Remove numbering in multiline equations 2
+
+\begin{flalign}
+	f(u) & =\sum_{j=1}^{n} x_jf(u_j)&\\ \nonumber
+	& =\sum_{j=1}^{n} x_j \sum_{i=1}^{m} a_{ij}v_i&\\ \nonumber
+	& =\sum_{j=1}^{n} \sum_{i=1}^{m} a_{ij}x_jv_i
+\end{flalign}
+
+% Align environment
+
+\begin{align}
+	f(u) & =\sum_{j=1}^{n} x_jf(u_j)\\
+	& =\sum_{j=1}^{n} x_j \sum_{i=1}^{m} a_{ij}v_i\\
+	& =\sum_{j=1}^{n} \sum_{i=1}^{m} a_{ij}x_jv_i
+\end{align}
+
+% Aligned environment
+
+\begin{equation}
+	\begin{aligned}
+		f(u) & =\sum_{j=1}^{n} x_jf(u_j)\\
+		& =\sum_{j=1}^{n} x_j \sum_{i=1}^{m} a_{ij}v_i\\
+		& = \sum_{j=1}^{n} \sum_{i=1}^{m} a_{ij}x_jv_i
+	\end{aligned}
+\end{equation}
+
+\newpage
+
+
+\begin{align}
+	x   & = \frac{-b\pm\sqrt{b^2-4ac}}{2a}          \label{eq1} \\
+	\frac{d}{dx}r^n & = nx^{n-1}                                \label{eq2} \\
+	\mathrm{Length} & = \int_{a}^{b}\sqrt{[f't]^2+[g't]^2}dt    \label{eq3}
+\end{align}
+
+or
+
+\begin{fleqn}
+	\begin{equation}\label{eq1}
+		x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+	\end{equation}
+	\begin{equation}\label{eq2}
+		\frac{d}{dx}r^n=nx^{n-1}
+	\end{equation}
+	\begin{equation}\label{eq3}
+		Length=\int_{a}^{b}\sqrt{[f't]^2+[g't]^2}dt
+	\end{equation}
+\end{fleqn}
+
+
+
+\newpage
+
+
+\lipsum[11]
+
+\begin{equation}\label{eq1}
+	x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+\end{equation}
+
+or
+
+\begin{equation}\label{eq2}
+	\frac{d}{dx}r^n=nx^{n-1}
+\end{equation}
+
+or
+
+\begin{equation}\label{eq3}
+	Length=\int_{a}^{b}\sqrt{[f't]^2+[g't]^2}dt
+\end{equation}
+
+or    
+
+\begin{gather}
+	x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}            \label{eq1} \\
+	\frac{d}{dx}r^n=nx^{n-1}                    \label{eq2} \\
+	Length=\int_{a}^{b}\sqrt{[f't]^2+[g't]^2}dt \label{eq3}
+\end{gather}
+
+\lipsum[11]
+
+\newpage
+
+
+\begin{fleqn}[2em]   
+	\begin{gather}
+		x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}            \label{eq1} \\
+		\frac{d}{dx}r^n=nx^{n-1}                    \label{eq2} \\
+		Length=\int_{a}^{b}\sqrt{[f't]^2+[g^1t]^2}dt \label{eq3}
+	\end{gather}
+\end{fleqn}
+
+
+
+\newpage
+
+
+\lipsum[11]
+
+
+\begin{flalign} \label{eq11}
+	& x =\frac{-b±\sqrt{b^2-4ac}}{2a} & \\
+	\label{eq2}
+	& \frac{d}{dx}r^n =nx^{n-1} \\
+	\label{eq6}
+	& \text{Length} = \int_{a}^{b} \sqrt{{[f^{1}t]^2+[g^{1}t]^2}\,dt}
+\end{flalign}
+
+
+
+Or even with the $ = $ signs aligned:
+
+
+
+\begin{flalign} \label{eqa12}
+	x & =\frac{-b±\sqrt{b²-4ac}}{2a} & \\
+	\label{eqa2}
+	\frac{d}{dx}r^n & =nx^{n-1} \\
+	\label{eqa6}
+	\text{Length} & = \int_{a}^{b} \sqrt{{[f^1t]+[g^{1}t]}\,dt}
+\end{flalign}
 
 \newpage
 
