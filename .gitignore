@@ -1,0 +1,22 @@
+
+# LaTeX
+*.pdf
+*.aux
+*.bib
+
+# Archives
+*.7z
+*.bzip
+*.gz
+*.tar
+*.tz
+*.zip
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+
